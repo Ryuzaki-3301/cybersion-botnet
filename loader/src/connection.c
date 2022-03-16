@@ -564,7 +564,7 @@ int connection_verify_payload(struct connection *conn)
     if(offset == -1)
         return 0;
     
-    if(util_memsearch(conn->rdbuf, offset, "follow @0xdedbeef 4 cum pics", 28) == -1)
+    if(util_memsearch(conn->rdbuf, offset, "follow @Ryuzaki-3301 for good luck!", 28) == -1)
         return offset;
     else
         return 255 + offset;
